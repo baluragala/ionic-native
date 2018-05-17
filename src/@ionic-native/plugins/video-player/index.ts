@@ -45,9 +45,9 @@ export interface VideoOptions {
  */
 @Plugin({
   pluginName: 'VideoPlayer',
-  plugin: 'https://github.com/moust/cordova-plugin-videoplayer.git',
+  plugin: 'https://github.com/baluragala/cordova-plugin-videoplayer.git',
   pluginRef: 'VideoPlayer',
-  repo: 'https://github.com/moust/cordova-plugin-videoplayer',
+  repo: 'https://github.com/baluragala/cordova-plugin-videoplayer',
   platforms: ['Android']
 })
 @Injectable()
@@ -60,7 +60,7 @@ export class VideoPlayer extends IonicNativePlugin {
    * @returns {Promise<any>} Resolves promise when the video was played successfully.
    */
   @Cordova()
-  play(fileUrl: string, options?: VideoOptions): Promise<any> { return; }
+  play(fileUrl: string[], options?: VideoOptions[]): Promise<any> { return; }
 
   /**
    * Stops the video playback immediatly.
