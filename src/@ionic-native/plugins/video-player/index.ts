@@ -60,7 +60,7 @@ export class VideoPlayer extends IonicNativePlugin {
    * @returns {Promise<any>} Resolves promise when the video was played successfully.
    */
   @Cordova()
-  play(fileUrl: string[], options?: VideoOptions[]): Promise<any> { return; }
+  play(fileUrl: string[], options?: any): Promise<any> { return; }
 
   /**
    * Stops the video playback immediatly.
